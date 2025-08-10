@@ -1,0 +1,29 @@
+POST http://localhost:3333/videos
+// Quando é feita uma requisição do frontend para o backend, é necessário 
+// informar o formato dos dados que estará sendo enviado
+Content-Type: application/json
+
+{
+    "title": "Video node",
+    "description": "Esse é o primeiro video",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/ae3745f9-73e1-43a7-a57c-867e3415a2c7
+Content-Type: application/json
+
+{
+    "title": "Video 02",
+    "description": "Esse é o vídeo 02",
+    "duration": 180
+}
+
+###
+
+DELETE http://localhost:3333/videos/ae3745f9-73e1-43a7-a57c-867e3415a2c7
